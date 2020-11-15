@@ -29,7 +29,7 @@ class CommandPub:
         header = Header()
         msg.header.stamp = rospy.get_rostime()
         timestamp = rospy.get_rostime()
-        header.seq = 0
+        header.seq = -1
         header.stamp = timestamp
         msg.header = header
         msg.pose.position.x = pose[0]
