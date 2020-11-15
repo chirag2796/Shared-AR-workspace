@@ -51,7 +51,7 @@ class CommandCallback:
         self.kwargs = kwargs
 
     @staticmethod
-    def change_orientation(x,y,z,w):
+    def change_orientation(x, y, z, w):
         pass
 
 if __name__ == '__main__':
