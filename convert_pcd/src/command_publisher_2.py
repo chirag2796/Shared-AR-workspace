@@ -45,6 +45,11 @@ class CommandPub:
         rospy.Subscriber("TeapotCommand_ros", PoseStamped, self.callback)
         rospy.spin()
 
+class CommandCallback:
+    def __init__(self, *args, **kwargs):
+        self.args = args
+        self.kwargs = kwargs
+
 if __name__ == '__main__':
     commander = CommandPub()
     commander.listener()
