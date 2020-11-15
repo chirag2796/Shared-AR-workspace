@@ -50,6 +50,10 @@ class CommandCallback:
         self.args = args
         self.kwargs = kwargs
 
+    @staticmethod
+    def change_orientation(x,y,z,w):
+        pass
+
 if __name__ == '__main__':
     commander = CommandPub()
     commander.listener()
